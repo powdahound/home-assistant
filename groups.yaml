@@ -1,0 +1,21 @@
+bedroom:
+  name: Bedroom
+  view: yes
+  entities:
+    - light.bedroom_lamp
+
+garret_office:
+  name: Garret's Office
+  view: yes
+  entities:
+    - light.hue_lightstrip_plus_1
+    - light.office_ceiling_1
+    - light.office_ceiling_2
+    - light.office_ceiling_3
+    - media_player.garrets_office_speakers
+
+living_room:
+  name: Living Room
+  view: yes
+  entities:
+    - light.living_room_lamp
