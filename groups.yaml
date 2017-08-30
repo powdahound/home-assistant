@@ -2,7 +2,8 @@ bedroom:
   name: Bedroom
   view: yes
   entities:
-    - light.bedroom_lamp
+    - light.hue_white_lamp_1_2
+    - light.hue_white_lamp_2
 
 garret_office:
   name: Garret's Office
@@ -19,3 +20,4 @@ living_room:
   view: yes
   entities:
     - light.living_room_lamp
+    - light.hue_white_lamp_1
