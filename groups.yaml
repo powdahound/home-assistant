@@ -2,7 +2,7 @@ bedroom:
   name: Bedroom
   view: yes
   entities:
-    - light.hue_white_lamp_1_2
+    - light.hue_white_lamp_1
     - light.hue_white_lamp_2
 
 garret_office:
@@ -13,11 +13,11 @@ garret_office:
     - light.office_ceiling_1
     - light.office_ceiling_2
     - light.office_ceiling_3
-    - media_player.garrets_office_speakers
 
 living_room:
   name: Living Room
   view: yes
   entities:
+    - light.living_room_couch
     - light.living_room_lamp
-    - light.hue_white_lamp_1
+    - light.living_room_table
