@@ -23,19 +23,19 @@
 - id: living_room_lights_sunset
   alias: Living room on before sunset
   trigger:
-  - platform: sun
-    event: sunset
-    offset: -01:30:00
+  - event: sunset
+    offset: -01:00:00
+    platform: sun
   action:
-    service: light.turn_on
-    entity_id: group.living_room
-    data:
+  - data:
       transition: 60
+    entity_id: group.living_room
+    service: light.turn_on
 - id: living_room_lights_night
   alias: Living room off at night
   trigger:
   - platform: time
-    at: "21:30:00"
+    at: '21:30:00'
   action:
     service: light.turn_off
     entity_id: group.living_room
@@ -45,7 +45,7 @@
   alias: Living room on in morning
   trigger:
   - platform: time
-    at: "05:00:00"
+    at: 05:00:00
   action:
     service: light.turn_on
     entity_id: group.living_room
