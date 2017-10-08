@@ -1,0 +1,22 @@
+- id: office_off
+  alias: Office off while away
+  trigger:
+  - entity_id: device_tracker.garret_phone
+    event: leave
+    platform: zone
+    zone: zone.home
+  action:
+  - data:
+      entity_id: group.garret_office
+    service: homeassistant.turn_off
+- id: office_on
+  alias: Office on while home
+  trigger:
+  - entity_id: device_tracker.garret_phone
+    event: enter
+    platform: zone
+    zone: zone.home
+  action:
+  - data:
+      entity_id: group.garret_office
+    service: light.turn_on

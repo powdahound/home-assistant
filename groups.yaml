@@ -1,23 +1,55 @@
-bedroom:
-  name: Bedroom
+default_view:
   view: yes
   entities:
-    - light.hue_white_lamp_1
-    - light.hue_white_lamp_2
+    - group.outside
+    - device_tracker.garret_phone
+
+Rooms:
+  view: yes
+  entities:
+    - group.kitchen
+    - group.bedroom
+    - group.garret_office
+    - group.living_room
+
+Trackers:
+  view: yes
+  icon: mdi:account-multiple
+  entities:
+    - device_tracker.garret_phone
+
+bedroom:
+  name: Bedroom
+  entities:
+    - light.bedroom_her_side
 
 garret_office:
   name: Garret's Office
-  view: yes
+
   entities:
-    - light.hue_lightstrip_plus_1
     - light.office_ceiling_1
     - light.office_ceiling_2
-    - light.office_ceiling_3
+    - light.office_desk
+    - light.office_desk_lamp
+    - light.office_square_lamp
+    - media_player.garrets_office_speakers
 
 living_room:
   name: Living Room
-  view: yes
   entities:
     - light.living_room_couch
     - light.living_room_lamp
     - light.living_room_table
+    - media_player.living_room
+
+kitchen:
+  name: kitchen
+  entities:
+    - media_player.kitchen_home
+    - media_player.kitchen
+
+outside:
+  name: Outside
+  entities:
+    - sun.sun
+    - sensor.yr_symbol

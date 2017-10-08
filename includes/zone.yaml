@@ -1,0 +1,17 @@
+- name: Home
+  latitude: !secret home_lat
+  longitude: !secret home_long
+  radius: 50
+  icon: mdi:home
+
+- name: Work
+  latitude: !secret work_lat
+  longitude: !secret work_long
+  radius: 150
+  icon: mdi:worker
+
+- name: Fruitvale BART
+  latitude: 37.7758921
+  longitude: -122.2240403
+  radius: 150
+  icon: mdi:train
