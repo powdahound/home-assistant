@@ -21,6 +21,7 @@ Trackers:
 bedroom:
   name: Bedroom
   entities:
+    - light.bedroom_his_side
     - light.bedroom_her_side
 
 garret_office:
