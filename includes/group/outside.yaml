@@ -1,0 +1,5 @@
+outside:
+  name: Outside
+  entities:
+    - sun.sun
+    - sensor.yr_symbol

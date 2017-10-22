@@ -1,0 +1,17 @@
+garret_office:
+  name: Garret's Office
+  entities:
+    - group.garret_office_audio
+    - group.garret_office_lights
+
+garret_office_audio:
+  entities:
+    - media_player.garrets_office_speakers
+
+garret_office_lights:
+  name: Garret's Office
+  entities:
+    - light.office_desk
+    - light.office_desk_lamp
+    - light.office_lamp_1
+    - light.office_lamp_2

@@ -1,0 +1,7 @@
+kitchen:
+  name: Kitchen
+
+kitchen_audio:
+  name: Kitchen Audio
+  entities:
+      - media_player.kitchen_home

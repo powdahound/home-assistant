@@ -1,0 +1,21 @@
+default_view:
+  view: yes
+  entities:
+    - device_tracker.garret_phone
+    - group.bedroom_lights
+    - group.garret_office_lights
+    - group.living_room_lights
+    - group.nursery_lights
+
+audio:
+  view: yes
+  entities:
+    - group.garret_office_audio
+    - group.kitchen_audio
+    - group.living_room_audio
+
+weather:
+  view: yes
+  entities:
+    - sun.sun
+    - sensor.yr_symbol

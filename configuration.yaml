@@ -49,10 +49,10 @@ mqtt:
 
 # Single files
 device_tracker: !include includes/device_tracker.yaml
-group: !include groups.yaml
 zone: !include includes/zone.yaml
 
 # Merge List
 automation: !include_dir_merge_list includes/automation
 
 # Merge Named
+group: !include_dir_merge_named includes/group

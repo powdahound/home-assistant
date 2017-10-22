@@ -1,0 +1,11 @@
+nursery:
+  name: Nursery
+  entities:
+    - group.nursery_lights
+
+nursery_lights:
+  name: Nursery
+  entities:
+    - light.nursery_ceiling_1
+    - light.nursery_ceiling_2
+    - light.nursery_lamp
