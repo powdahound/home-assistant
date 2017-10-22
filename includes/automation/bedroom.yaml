@@ -6,7 +6,8 @@
     platform: sun
   action:
   - data:
-      profile: reading
+      profile: read
+      brightness_pct: 30
       transition: 60
     entity_id: group.bedroom
     service: light.turn_on

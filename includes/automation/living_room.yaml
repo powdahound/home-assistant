@@ -5,8 +5,9 @@
     platform: time
   action:
   - data:
-      profile: reading
+      profile: read
       transition: 60
+      brightness_pct: 50
     entity_id: group.living_room
     service: light.turn_on
 
@@ -30,8 +31,9 @@
     platform: sun
   action:
   - data:
-      profile: reading
+      profile: relax
       transition: 60
+      brightness_pct: 50
     entity_id: group.living_room
     service: light.turn_on
 

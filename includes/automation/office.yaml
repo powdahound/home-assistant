@@ -20,6 +20,8 @@
   action:
   - data:
       entity_id: group.garret_office
+      profile: cozy
+      brightness_pct: 50
     service: light.turn_on
 
 - id: office_on_morning
@@ -30,6 +32,8 @@
   action:
   - data:
       entity_id: group.garret_office
+      profile: cozy
+      brightness_pct: 50
     service: light.turn_on
   condition:
     condition: zone
