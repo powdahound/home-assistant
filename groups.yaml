@@ -1,22 +1,14 @@
 default_view:
   view: yes
   entities:
-    - group.outside
+    - sun.sun
+    - sensor.yr_symbol
     - device_tracker.garret_phone
-
-Rooms:
-  view: yes
-  entities:
-    - group.kitchen
     - group.bedroom
     - group.garret_office
+    - group.kitchen
     - group.living_room
-
-Trackers:
-  view: yes
-  icon: mdi:account-multiple
-  entities:
-    - device_tracker.garret_phone
+    - group.nursery
 
 bedroom:
   name: Bedroom
@@ -28,12 +20,17 @@ garret_office:
   name: Garret's Office
 
   entities:
-    - light.office_ceiling_1
-    - light.office_ceiling_2
     - light.office_desk
     - light.office_desk_lamp
-    - light.office_square_lamp
+    - light.office_lamp_1
+    - light.office_lamp_2
     - media_player.garrets_office_speakers
+
+kitchen:
+  name: kitchen
+  entities:
+    - media_player.kitchen_home
+    - media_player.sonos_kitchen
 
 living_room:
   name: Living Room
@@ -41,13 +38,14 @@ living_room:
     - light.living_room_couch
     - light.living_room_lamp
     - light.living_room_table
-    - media_player.living_room
+    - media_player.sonos_living
 
-kitchen:
-  name: kitchen
+nursery:
+  name: Nursery
   entities:
-    - media_player.kitchen_home
-    - media_player.kitchen
+    - light.nursery_ceiling_1
+    - light.nursery_ceiling_2
+    - light.nursery_lamp
 
 outside:
   name: Outside
