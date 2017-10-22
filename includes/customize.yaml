@@ -1,9 +1,15 @@
-- entity_id: sensor.dark_sky_temperature
-  friendly_name: Temperature
+sensor.dark_sky_apparent_temperature:
+  friendly_name: Feels Like
 
-- entity_id: sensor.dark_sky_precip
+sensor.dark_sky_precip:
   friendly_name: Precipitation
   icon: mdi:weather-rainy
 
-- entity_id: sensor.dark_sky_apparent_temperature
-  friendly_name: Feels Like
+sensor.dark_sky_precip_probability:
+  friendly_name: Precip chance
+
+sensor.dark_sky_summary:
+  friendly_name: Weather
+
+sensor.dark_sky_temperature:
+  friendly_name: Temperature
