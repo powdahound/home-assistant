@@ -2,4 +2,8 @@ outside:
   name: Outside
   entities:
     - sun.sun
-    - sensor.yr_symbol
+    - sensor.dark_sky_summary
+    - sensor.dark_sky_apparent_temperature
+    - sensor.dark_sky_temperature
+    - sensor.dark_sky_precip
+    - sensor.dark_sky_precip_probability

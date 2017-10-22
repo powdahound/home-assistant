@@ -6,6 +6,7 @@ default_view:
     - group.garret_office_lights
     - group.living_room_lights
     - group.nursery_lights
+    - group.outside
 
 audio:
   view: yes
@@ -17,5 +18,4 @@ audio:
 weather:
   view: yes
   entities:
-    - sun.sun
-    - sensor.yr_symbol
+    - group.outside

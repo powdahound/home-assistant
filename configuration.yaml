@@ -6,6 +6,7 @@ homeassistant:
   elevation: 2
   unit_system: imperial
   time_zone: America/Los_Angeles
+  customize: !include includes/customize.yaml
 
 logger:
   default: warning
@@ -32,9 +33,6 @@ logbook:
 
 sun:
 
-sensor:
-  - platform: yr
-
 # Components ###################################################################
 
 tts:
@@ -53,6 +51,7 @@ zone: !include includes/zone.yaml
 
 # Merge List
 automation: !include_dir_merge_list includes/automation
+sensor: !include_dir_merge_list includes/sensor
 
 # Merge Named
 group: !include_dir_merge_named includes/group
