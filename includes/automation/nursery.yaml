@@ -7,7 +7,7 @@
   - data:
       profile: dimmed
       transition: 60
-      brightness_pct: 30
+      brightness_pct: 15
     entity_id: group.nursery
     service: light.turn_on
 
@@ -20,8 +20,6 @@
   action:
     service: light.turn_off
     entity_id: group.nursery
-    data:
-      transition: 60
 
 - id: nursery_lights_sunset
   alias: Nursery on before sunset
@@ -33,7 +31,7 @@
   - data:
       profile: bright
       transition: 60
-      brightness_pct: 30
+      brightness_pct: 20
     entity_id: group.nursery
     service: light.turn_on
 
