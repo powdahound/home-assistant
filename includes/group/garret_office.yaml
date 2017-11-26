@@ -6,7 +6,8 @@ garret_office:
 
 garret_office_audio:
   entities:
-    - media_player.garrets_office_speakers
+    - media_player.sonos_living
+    - media_player.sonos_kitchen
 
 garret_office_lights:
   name: Garret's Office

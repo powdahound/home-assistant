@@ -7,8 +7,9 @@ living_room:
 living_room_audio:
   name: Living Room Audio
   entities:
-    - media_player.living_room_speaker
     - media_player.living_room_tv
+    - media_player.living_room
+    - media_player.living_room_home
 
 living_room_lights:
   name: Living Room Lights
@@ -16,3 +17,4 @@ living_room_lights:
     - light.living_room_couch
     - light.living_room_lamp
     - light.living_room_table
+    - switch.christmas_tree
