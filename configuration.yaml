@@ -35,8 +35,8 @@ sun:
 
 # Components ###################################################################
 
-tts:
- - platform: google
+#tts:
+#- platform: google
 
 mqtt:
   broker: !secret mqtt_broker
